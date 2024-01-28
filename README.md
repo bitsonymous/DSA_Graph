@@ -15,3 +15,7 @@ Q1 - https://leetcode.com/problems/find-if-path-exists-in-graph/
 
 Q2 - https://leetcode.com/problems/find-the-town-judge/description/
 
+Q3 - https://leetcode.com/problems/number-of-islands/description/
+
+Q4 - https://leetcode.com/problems/flood-fill/description/
+
