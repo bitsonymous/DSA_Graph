@@ -12,38 +12,5 @@
 
 ## Questions
 Q1 - https://leetcode.com/problems/find-if-path-exists-in-graph/
-
-Sol.
-```cpp
-class Solution {
-public:
-    bool validPath(int n, vector<vector<int>>& edges, int source, int destination) {
-
-        unordered_map<int, vector<int>> umap;
-        for(auto x : edges){
-            int u = x[0];
-            int v = x[1];
-            umap[u].push_back(v);
-            umap[v].push_back(u);
-        }
-
-        vector<bool> visited(n+1, false);
-        queue<int> q;
-        q.push(source);
-        visited[source] =true;
-        while(!q.empty()){
-            int top = q.front();
-            q.pop();
-            if(visited[destination] == true) return true;
-            for(auto it : umap[top]){
-                if(visited[it]==false){
-                    visited[it]=true;
-                    q.push(it);
-                }
-            }
-        }
-        return visited[destination];
-    }
-};
-```
+Q2 - https://leetcode.com/problems/find-the-town-judge/description/
 
